@@ -115,18 +115,40 @@
 
 
 
-function addition() {
-    let num1 = document.getElementById("num1").value;
-    let num2 = document.getElementById("num2").value;
-    let calculation = document.getElementById("calculation");
-    calculation.innerText = Number(num1) + Number(num2);
-    console.log(calculation);
-}
+// function addition() {
+//     let num1 = document.getElementById("num1").value;
+//     let num2 = document.getElementById("num2").value;
+//     let calculation = document.getElementById("calculation");
+//     calculation.innerText = Number(num1) + Number(num2);
+//     console.log(calculation);
+// }
 
-function substraction() {
-     let num1 = document.getElementById("num1").value;
-    let num2 = document.getElementById("num2").value;
-    let calculation = document.getElementById("calculation");
-    calculation.innerText = Number(num1) - Number(num2);
-    console.log(calculation);
+// function substraction() {
+//      let num1 = document.getElementById("num1").value;
+//     let num2 = document.getElementById("num2").value;
+//     let calculation = document.getElementById("calculation");
+//     calculation.innerText = Number(num1) - Number(num2);
+//     console.log(calculation);
+// }
+
+let customerList = [];
+
+
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName");
+    let txtAddress = document.getElementById("txtAddress");
+    let txtAge = document.getElementById("txtAge");
+    let txtEmail = document.getElementById("txtEmail");
+    let txtSalary = document.getElementById("txtSalary");
+
+    let customer ={
+        name: txtName,
+        address: txtAddress,
+        age: txtAge,
+        email:  txtEmail,
+        salary: txtSalary
+    };
+
+    customerList.push(customer);
+    console.log(customerList);
 }
