@@ -83,25 +83,33 @@
 
 // document.write("<h2>Hello</h2>");
 
-console.log(document);
+// console.log(document);
 
-let heading = document.getElementById("heading");
+// let heading = document.getElementById("heading");
 
-heading.innerText = "ABC";
+// heading.innerText = "ABC";
 
-let num = 0;
-function increment(){
+// let num = 0;
+// function increment(){
    
-    heading.innerText = "A"+ ++num;
-    console.log("+ Clicked");
+//     heading.innerText = "A"+ ++num;
+//     console.log("+ Clicked");
     
-}
+// }
 
-function decrement(){
+// function decrement(){
    
-    heading.innerText = "A"+ --num;
-    console.log(" - Clicked");
+//     heading.innerText = "A"+ --num;
+//     console.log(" - Clicked");
   
-}
+// }
 
+
+function changeHeading(){
+    let txtInput = document.getElementById("inputName");
+    console.log(txtInput);
+    console.log(txtInput.value);
+    let heading =  document.getElementById("heading");
+    heading.innerText = txtInput.value;
+}
 
