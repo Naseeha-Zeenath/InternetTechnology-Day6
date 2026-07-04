@@ -50,7 +50,7 @@
 //                     id: 2,
 //                     name: "variant2",
 //                     price: 20
-                    
+
 //                 }
 //             ]
 //         }, {
@@ -91,25 +91,42 @@
 
 // let num = 0;
 // function increment(){
-   
+
 //     heading.innerText = "A"+ ++num;
 //     console.log("+ Clicked");
-    
+
 // }
 
 // function decrement(){
-   
+
 //     heading.innerText = "A"+ --num;
 //     console.log(" - Clicked");
-  
+
 // }
 
 
-function changeHeading(){
-    let txtInput = document.getElementById("inputName");
-    console.log(txtInput);
-    console.log(txtInput.value);
-    let heading =  document.getElementById("heading");
-    heading.innerText = txtInput.value;
+// function changeHeading(){
+//     let txtInput = document.getElementById("inputName");
+//     console.log(txtInput);
+//     console.log(txtInput.value);
+//     let heading =  document.getElementById("heading");
+//     heading.innerText = txtInput.value;
+// }
+
+
+
+function addition() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let calculation = document.getElementById("calculation");
+    calculation.innerText = Number(num1) + Number(num2);
+    console.log(calculation);
 }
 
+function decrement() {
+     let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let calculation = document.getElementById("calculation");
+    calculation.innerText = Number(num1) - Number(num2);
+    console.log(calculation);
+}
