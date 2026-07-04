@@ -123,7 +123,7 @@ function addition() {
     console.log(calculation);
 }
 
-function decrement() {
+function substraction() {
      let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
     let calculation = document.getElementById("calculation");
